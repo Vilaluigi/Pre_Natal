@@ -1,0 +1,93 @@
+/* Reseta margens globais da página e força ocupar a tela inteira */
+:host {
+  display: block;
+  width: 100vw;
+  height: 100vh;
+  margin: 0;
+  padding: 0;
+  overflow: hidden; /* Evita barras de rolagem desnecessárias */
+}
+
+/* O contêiner principal agora preenche 100% da janela sem limites */
+.cartao-mensagem {
+  position: relative;
+  width: 100vw;
+  height: 100vh;
+  background-color: #2192b5; /* Cor azul turquesa idêntica ao seu protótipo */
+  color: #ffffff;
+  padding: 3rem 5rem;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+/* Botão Voltar no canto superior esquerdo */
+.btn-voltar {
+  background: none;
+  border: none;
+  color: #ffffff;
+  font-size: 1.2rem;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0;
+  align-self: flex-start;
+  transition: opacity 0.2s ease;
+}
+
+.btn-voltar:hover {
+  opacity: 0.75;
+}
+
+/* Título centralizado */
+.titulo {
+  font-size: 2.5rem;
+  font-weight: 700;
+  text-align: center;
+  margin: 0;
+}
+
+/* Blocos de texto centralizados e com boa legibilidade */
+.conteudo-texto {
+  display: flex;
+  flex-direction: column;
+  gap: 1.8rem;
+  font-size: 1.35rem;
+  line-height: 1.6;
+  text-align: justify;
+  max-width: 1000px; /* Garante uma largura confortável para leitura em telas grandes */
+  margin: 0 auto;
+}
+
+.conteudo-texto p {
+  margin: 0;
+}
+
+/* Área inferior com os dois botões */
+.acoes-rodape {
+  display: flex;
+  justify-content: center;
+  gap: 20rem;
+  margin-top: 2rem;
+  margin-bottom: 1rem;
+}
+
+/* Estilo dos botões inferiores */
+.btn-acao {
+  background-color: #d1d5db; /* Cinza claro */
+  color: #374151; /* Texto cinza escuro */
+  border: none;
+  border-radius: 8px;
+  padding: 0.85rem 4rem;
+  font-size: 1.2rem;
+  font-weight: 500;
+  cursor: pointer;
+  transition: background-color 0.2s ease, transform 0.1s ease;
+}
+
+.btn-acao:hover {
+  background-color: #e5e7eb;
+  transform: translateY(-2px);
+}

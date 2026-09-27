@@ -1,6 +1,7 @@
 import { Routes } from "@angular/router";
 import { WelcomePreNatal } from "./features/welcome/welcome-pre-natal/welcome-pre-natal";
 
+
 export const routes: Routes = [
     {
         path: '',
@@ -10,5 +11,9 @@ export const routes: Routes = [
     {
         path:'welcome',
         component: WelcomePreNatal
+    },
+    {
+        path:'infoStudent',
+        loadComponent:()=> import("./features/welcome/info-student-pre-natal/info-student-pre-natal").then(m =>m.InfoStudentPreNatal)
     }
 ];
