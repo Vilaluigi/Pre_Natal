@@ -1,0 +1,72 @@
+/* Reseta margens e garante ocupação total da tela */
+:host {
+  display: block;
+  height: 100vh;
+  width: 100vw;
+}
+
+.container-principal {
+  display: flex;
+  width: 100%;
+  height: 100vh;
+  background-color: #BABBBD; /* Cor cinza do fundo */
+  overflow: hidden;
+}
+
+/* Lado Esquerdo (Conteúdo) */
+.lado-esquerdo {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 2rem;
+  background-color: #BABBBD;
+  z-index: 2;
+}
+
+.titulo {
+  color: #ffffff;
+  font-size: 2.5rem;
+  font-weight: bold;
+  text-align: center;
+  /* margin-bottom: 2.5rem; */
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.logo {
+  object-fit: contain;
+  margin-bottom: 2.5rem;
+}
+
+.botao-acessar {
+  background-color: #1ba1c7; /* Azul do protótipo */
+  color: #ffffff;
+  border: none;
+  padding: 16px 48px;
+  font-size: 1.25rem;
+  font-weight: 500;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.2s ease, transform 0.1s ease;
+  width: 300px;
+}
+
+.botao-acessar:hover {
+  background-color: #1585a5;
+  transform: translateY(-2px);
+   width: 300px;
+}
+
+/* Lado Direito (Imagem da Gestante) */
+.lado-direito {
+  flex: 1.2;
+  position: relative;
+  height: 100%;
+}
+
+.imagem-gestante {
+  object-fit: cover;
+  object-position: center right;
+}
