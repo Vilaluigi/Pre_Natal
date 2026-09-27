@@ -1,3 +1,56 @@
 body{
 margin: 0;
 }
+h1{
+    font-family: Poppins;
+}
+
+.custom-select {
+  width: 100%;
+  max-width: 200px;
+}
+
+/* Fundo azul do container */
+.custom-select .mat-mdc-text-field-wrapper {
+  background-color: #1A728A !important;
+  border-radius: 6px 6px 0px 0px !important;
+}
+
+/* Esconde a linha inferior do Material */
+.custom-select .mdc-line-ripple {
+  display: none !important;
+}
+
+/* Cor do texto, label e seta em branco */
+.custom-select .mat-mdc-select-value-text,
+.custom-select .mat-mdc-select-placeholder,
+.custom-select .mat-mdc-floating-label,
+.custom-select .mat-mdc-select-arrow {
+  color: #ffffff !important;
+}
+
+
+/* src/styles.css */
+
+/* Fundo do painel suspenso */
+.custom-select-panel.mat-mdc-select-panel {
+  background-color: #1A728A !important;
+}
+
+/* Cor do texto de cada opção */
+.custom-select-panel .mat-mdc-option .mdc-list-item__primary-text {
+  color: #ffffff !important;
+}
+
+/* Efeito ao passar o rato (hover) ou quando uma opção está focada/selecionada */
+.custom-select-panel .mat-mdc-option:hover,
+.custom-select-panel .mat-mdc-option.mdc-list-item--selected,
+.custom-select-panel .mat-mdc-option:focus {
+  background-color: rgba(255, 255, 255, 0.15) !important;
+}
+
+/* Cor do texto da opção selecionada */
+.custom-select-panel .mat-mdc-option.mdc-list-item--selected .mdc-list-item__primary-text {
+  color: #ffffff !important;
+  font-weight: bold;
+}

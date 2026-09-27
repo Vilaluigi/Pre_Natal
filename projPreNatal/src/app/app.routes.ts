@@ -15,5 +15,9 @@ export const routes: Routes = [
     {
         path:'infoStudent',
         loadComponent:()=> import("./features/welcome/info-student-pre-natal/info-student-pre-natal").then(m =>m.InfoStudentPreNatal)
+    },
+    {
+        path:"home",
+        loadComponent:()=>import("./features/home/home-pre-natal/home-pre-natal").then(m=>m.HomePreNatal)
     }
 ];

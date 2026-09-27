@@ -1,0 +1,38 @@
+<app-main-layout-pre-natal>
+    <div class="pagina-container" card-body>
+
+        <!-- Título e Subtítulo -->
+        <h1 class="titulo-principal">Bem-vindo !</h1>
+        <h2 class="subtitulo">Selecione um hemograma da paciente que deseja analisar para continuar</h2>
+
+        <!-- Grid com as Pacientes -->
+        <div class="pacientes-grid">
+
+            <!-- Paciente 1 -->
+            @for (item of dadosPacientes(); track $index) {
+            <div class="card-paciente">
+                <div class="avatar-box">
+                    <img src="assets/Paciente01.jpg" [alt]="item.nomePaciente.split(' ')[1]" class="avatar-paciente">
+                </div>
+                <mat-form-field class="custom-select">
+                    <mat-label>{{item.nomePaciente}}</mat-label>
+                    <mat-select panelClass="custom-select-panel">
+                         <mat-option [value]=""></mat-option>
+                        @for (dado of item.dadosTrimestres; track dado.key) {
+                        <mat-option [value]="dado.value">{{dado.key}}</mat-option>
+                        }
+                    </mat-select>
+                </mat-form-field>
+            </div>
+            }
+        </div>
+
+        <!-- Botão de Ação -->
+        <div class="acao-container">
+            <app-button-pre-natal
+            [dadosButton]="{nomeButton:'Continuar',rotaButton:'/' }"/>
+        </div>
+
+    </div>
+
+</app-main-layout-pre-natal>

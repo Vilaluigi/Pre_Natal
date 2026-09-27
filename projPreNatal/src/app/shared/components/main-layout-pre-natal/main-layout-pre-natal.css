@@ -1,0 +1,93 @@
+:host {
+  display: block;
+  width: 100vw;
+  height: 100vh;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+}
+
+.layout-container {
+  display: flex;
+  width: 100vw;
+  height: 100vh;
+  background-color: #2299B9; /* Cor azul do fundo e da sidebar */
+  box-sizing: border-box;
+}
+.sidebar {
+  width: 260px;
+  background-color: transparent; /* Permite ver a cor do fundo do container */
+  display: flex;
+  flex-direction: column;
+  padding-top: 2rem;
+  box-sizing: border-box;
+  flex-shrink: 0;
+}
+
+.logo-container {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 2.5rem;
+}
+
+.avatar-logo {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+/* Links do Menu */
+.nav-menu {
+  display: flex;
+  flex-direction: column;
+}
+
+.nav-item {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  padding: 1rem 2rem;
+  color: #ffffff;
+  font-size: 1.25rem;
+  font-weight: 600;
+  text-decoration: none;
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+
+.nav-item:hover {
+  background-color: rgba(255, 255, 255, 0.1);
+}
+
+.nav-item.active {
+  background-color: #1A728A; /* Destaque do item selecionado */
+}
+
+.nav-item.sair {
+  margin-top: 2rem;
+}
+
+/* Área Central com os cantos arredondados */
+.content-area {
+  flex: 1;
+  background-color: #f0f2f5; /* Cor do fundo claro da área de conteúdo */
+  
+  /* ARREDONDAMENTO DAS BORDAS */
+  /* Define o raio de arredondamento dos cantos (superior-esquerdo, superior-direito, inferior-direito, inferior-esquerdo) */
+  border-top-left-radius: 30px;
+  border-bottom-left-radius: 30px;
+  
+  /* Caso queira arredondar também o lado direito (como aparece na imagem): */
+  border-top-right-radius: 30px;
+  border-bottom-right-radius: 30px;
+
+  /* Espaçamento em relação à borda da janela */
+  /* margin: 1.5rem 1.5rem 1.5rem 0;  */
+
+ /* height: calc(100vh - 3rem); /* Ajusta a altura considerando o margin superior/inferior */
+  overflow-y: auto;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+}

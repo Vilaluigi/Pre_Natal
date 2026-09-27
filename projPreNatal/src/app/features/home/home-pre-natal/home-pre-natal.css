@@ -1,0 +1,82 @@
+.pagina-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+  padding: 3rem 2rem;
+  box-sizing: border-box;
+}
+
+.titulo-principal {
+  color: #1A728A;
+  font-size: 3rem;
+  font-weight: 700;
+  margin: 0 0 4rem 0;
+}
+
+.subtitulo {
+  color: #1A728A;
+  font-size: 1.35rem;
+  font-weight: 600;
+  text-align: center;
+  margin-bottom: 4rem;
+  max-width: 900px;
+}
+
+/* Grid das fotos das pacientes */
+.pacientes-grid {
+  display: flex;
+  justify-content: center;
+  gap: 3.5rem;
+  margin-bottom: 4rem;
+}
+
+.card-paciente {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1.2rem;
+}
+
+.avatar-box {
+  width: 180px;
+  height: 180px;
+  background-color: #d8e6eb;
+  border-radius: 16px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+}
+
+.avatar-paciente {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* Botões Select azuis */
+.select-btn {
+  background-color: #1a7a97;
+  color: #ffffff;
+  border: none;
+  border-radius: 6px;
+  padding: 0.6rem 1.5rem;
+  font-size: 1.1rem;
+  font-weight: 500;
+  cursor: pointer;
+  min-width: 170px;
+  transition: opacity 0.2s;
+}
+
+.select-btn:hover {
+  opacity: 0.9;
+}
+
+/* Botão Continuar */
+.acao-container {
+  margin-top: 1rem;
+}
+
