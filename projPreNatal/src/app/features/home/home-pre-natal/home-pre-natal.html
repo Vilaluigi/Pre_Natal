@@ -16,7 +16,7 @@
                 </div>
                 <mat-form-field class="custom-select">
                     <mat-label>{{item.nomePaciente}}</mat-label>
-                    <mat-select panelClass="custom-select-panel">
+                    <mat-select panelClass="custom-select-panel" [formControl]="ArrayPacientes.controls[$index]">
                          <mat-option [value]=""></mat-option>
                         @for (dado of item.dadosTrimestres; track dado.key) {
                         <mat-option [value]="dado.value">{{dado.key}}</mat-option>
