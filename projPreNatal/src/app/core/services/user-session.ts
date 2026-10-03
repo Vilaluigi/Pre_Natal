@@ -5,14 +5,21 @@ import { dadosSession } from './user-session.model';
     providedIn:"root"
 })
 export class UserSession {
-    constructor(){}
-    dadoSessao:dadosSession = {
+
+    private dadoSessao:dadosSession = {
         logado:true,
         respCondultas:'',
         dadosTrimestre:{nomePaciente:'',numeroTrimestre:0}
     }
+    get session(){
+        return JSON.parse(sessionStorage.getItem("usuario-logado") as string)
+        
+    }
+    set session(item:dadosSession){
+        sessionStorage.setItem("usuario-logado",JSON.stringify(item))
+    }
     gerarSessao(){
-        sessionStorage.setItem("usuario-logado",JSON.stringify(this.dadoSessao))
+        this.session = this.dadoSessao
     }
     deletaSessao(){
         sessionStorage.removeItem("usuario-logado")

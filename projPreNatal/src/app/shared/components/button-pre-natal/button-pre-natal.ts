@@ -10,5 +10,5 @@ import { RouterLink } from '@angular/router';
 })
 export class ButtonPreNatal {
   
-  dadosButton = input.required<dadosButton>()
+  dadosButton = input<dadosButton>()
 }
