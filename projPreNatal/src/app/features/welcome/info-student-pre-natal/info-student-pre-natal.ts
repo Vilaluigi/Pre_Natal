@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 import { RouterLink } from '@angular/router';
+import { UserSession } from '../../../core/services/user-session';
 
 @Component({
   imports: [RouterLink],
@@ -9,6 +10,9 @@ import { RouterLink } from '@angular/router';
 })
 export class InfoStudentPreNatal {
 
-
- 
+constructor( private userSession:UserSession){}
+ teste(){
+  this.userSession.gerarSessao()
+  this.userSession.session
+ }
 }

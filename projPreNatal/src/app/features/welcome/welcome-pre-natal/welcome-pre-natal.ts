@@ -13,8 +13,6 @@ export class WelcomePreNatal implements OnInit {
   constructor(private session:UserSession){}
 
   ngOnInit(): void {
-  console.log("deixa eu ver se funciona");
-  this.session.gerarSessao()
   
   }
 }
