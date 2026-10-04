@@ -6,5 +6,5 @@ export interface dadosSession{
 
 export interface ITrimestre {
     nomePaciente:string,
-    numeroTrimestre:number
+    numeroTrimestre:number | string
 }

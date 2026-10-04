@@ -4,6 +4,8 @@ import { MatFormFieldModule } from '@angular/material/form-field';
 import { MatSelectModule } from '@angular/material/select';
 import { ButtonPreNatal } from '../../../shared/components/button-pre-natal/button-pre-natal';
 import { FormArray, FormControl, ReactiveFormsModule } from '@angular/forms';
+import { UserSession } from '../../../core/services/user-session';
+import { dadosSession } from '../../../core/services/user-session.model';
 @Component({
   imports: [MainLayoutPreNatal, MatFormFieldModule, MatSelectModule, ButtonPreNatal,ReactiveFormsModule,],
   selector: 'app-home-pre-natal',
@@ -11,6 +13,10 @@ import { FormArray, FormControl, ReactiveFormsModule } from '@angular/forms';
   templateUrl: './home-pre-natal.html',
 })
 export class HomePreNatal implements OnInit {
+  copiaSession:dadosSession
+  constructor(private userSession:UserSession){
+    this.copiaSession = this.userSession.session
+  }
   ArrayPacientes = new FormArray([
     new FormControl(''),
     new FormControl(''),
@@ -18,6 +24,7 @@ export class HomePreNatal implements OnInit {
   ])
   dadosPacientes = signal([
     {
+      idPaciente:1,
       nomePaciente: 'Gestação Maria',
       dadosTrimestres: [
         {
@@ -35,6 +42,7 @@ export class HomePreNatal implements OnInit {
       ]
     },
     {
+      idPaciente:2,
       nomePaciente: 'Gestação Ana',
       dadosTrimestres: [
         {
@@ -52,6 +60,7 @@ export class HomePreNatal implements OnInit {
       ]
     },
     {
+      idPaciente:3,
       nomePaciente: 'Gestação Dani',
       dadosTrimestres: [
         {
@@ -71,12 +80,23 @@ export class HomePreNatal implements OnInit {
   ])
 
   ngOnInit(): void {
-    this.ArrayPacientes.valueChanges.subscribe(item =>{
-      console.log("bora ver",item.filter(it=> it !== ''), );
-      let valor = item.findIndex(it=> it !== '')
-      console.log("olha",this.dadosPacientes()[valor].nomePaciente);
-      
+   this.ArrayPacientes.valueChanges.subscribe(item=>{
+     
+     let indice =  item.findIndex(i => i !== '' )
+     console.log("olha",item.findIndex(i => i !== '' ));
+
+     
+    this.copiaSession.dadosTrimestre.nomePaciente = this.dadosPacientes()[indice].nomePaciente
+    this.copiaSession.dadosTrimestre.numeroTrimestre = this.ArrayPacientes.at(indice).value as string
+    this.userSession.session = this.copiaSession
+     console.log("teste",this.userSession.session);
+     
       
     })
+  }
+
+  pegarForControlCorreto(indice:number):FormControl{
+
+    return this.ArrayPacientes.at(indice) 
   }
 }
