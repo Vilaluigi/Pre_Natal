@@ -1,0 +1,130 @@
+.hemograma-container {
+  padding: 24px 32px;
+  background-color: #f4f6f8;
+  font-family: 'Roboto', sans-serif;
+  color: #333333;
+}
+
+/* Cabeçalho */
+.header-info {
+  margin-bottom: 24px;
+}
+
+.titulo-hemograma {
+  color: #1a738a;
+  font-size: 1.15rem;
+  font-weight: 700;
+  margin-bottom: 12px;
+}
+
+.subtitulo-hemograma {
+  font-size: 1rem;
+  font-weight: 700;
+  color: #222222;
+  margin-bottom: 8px;
+  letter-spacing: 0.5px;
+}
+
+.metodo-info,
+.material-info {
+  font-size: 0.85rem;
+  color: #666666;
+  margin: 4px 0;
+}
+
+/* Estrutura das Seções e Tabelas */
+.secao-laudo {
+  margin-bottom: 28px;
+}
+
+.tabela-header {
+  display: flex;
+  background-color: #D9D9D9;
+  opacity: 50%;
+  padding: 10px 16px;
+  border-radius: 4px;
+  font-weight: 700;
+  color: #808080;
+  font-size: 0.9rem;
+}
+
+.col-nome {
+  flex: 2;
+  text-align: left;
+}
+
+.col-resultado {
+  flex: 1.5;
+  text-align: left;
+}
+
+.col-referencia {
+  flex: 1.5;
+  text-align: left;
+}
+
+.tabela-header .seta {
+  margin-left: 6px;
+  color: #a0aec0;
+}
+
+.tabela-body {
+  padding: 8px 16px;
+}
+
+.linha {
+  display: flex;
+  padding: 8px 0;
+  font-size: 0.88rem;
+}
+
+.linha .col-nome {
+  font-weight: 700;
+  color: #2d3748;
+}
+
+.linha .col-resultado {
+  font-weight: 700;
+  color: #1a202c;
+}
+
+.linha .col-referencia {
+  font-weight: 700;
+  color: #2d3748;
+}
+
+/* Observação Alerta */
+.observacao-alerta {
+  margin-top: 16px;
+  padding: 0 16px;
+  font-size: 0.9rem;
+}
+
+.destaque-vermelho {
+  color: #e53e3e;
+  font-weight: 700;
+}
+
+/* Botão de Ação */
+.acao-container {
+  display: flex;
+  justify-content: center;
+  margin-top: 32px;
+  margin-bottom: 16px;
+}
+
+.btn-comparar {
+  background-color: #1a738a;
+  color: #ffffff;
+  border: none;
+  border-radius: 6px;
+  padding: 10px 24px;
+  font-size: 0.95rem;
+  font-weight: 500;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+}
+
+.btn-comparar:hover {
+  background-color: #145b6e;
+}

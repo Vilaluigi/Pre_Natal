@@ -1,0 +1,86 @@
+<app-main-layout-pre-natal>
+
+    <div class="hemograma-container" card-body>
+        <!-- Cabeçalho -->
+        <header class="header-info">
+            <h1 class="titulo-hemograma">
+                Hemograma - 12 de julho - {{userSession.session.dadosTrimestre.numeroTrimestre}} trimestre de gestação - {{userSession.session.dadosTrimestre.nomePaciente}}
+            </h1>
+            <h2 class="subtitulo-hemograma">HEMOGRAMA COMPLETO</h2>
+            <p class="metodo-info">
+                <strong>Método:</strong> Análise realizada por Citometria de fluxo fluorescente e impedância
+                "XN-1-Sysmex"
+            </p>
+            <p class="material-info">
+                <strong>Material:</strong> SANGUE TOTAL COM EDTA
+            </p>
+        </header>
+        @for (dados of HemogramaPacientes; track $index) {
+        <!-- Tabela Eritrograma -->
+        <section class="secao-laudo">
+            <div class="tabela-header">
+                <span class="col-nome">Eritrograma</span>
+                <span class="col-resultado">Resultados</span>
+                <span class="col-referencia">Valores de referência</span>
+            </div>
+            @for (item of dados.eritrograma; track $index) {
+            <div class="tabela-body">
+                <div class="linha">
+                    <span class="col-nome">{{item.nomeCampos}}</span>
+                    <span class="col-resultado">{{item.resultado}} {{item.unidade}}</span>
+                    <span class="col-referencia">{{item.referencia.min}},00  a  {{item.referencia.max}}</span>
+                </div>
+                
+            </div>
+            }
+        </section>
+
+        <!-- Tabela Leucograma -->
+        <section class="secao-laudo">
+            <div class="tabela-header">
+                <span class="col-nome">Leucograma</span>
+                <span class="col-resultado">Resultados</span>
+                <span class="col-referencia">Valores de referência</span>
+            </div>
+            @for (item of dados.leucograma; track $index) {
+            <div class="tabela-body">
+                <div class="linha">
+                    <span class="col-nome">{{item.nomeCampos}}</span>
+                    <span class="col-resultado">{{item.resultado_absoluto || item.percentual}}{{item.unidade_absoluta || '%'}}</span>
+                    <span class="col-referencia">{{item.referencia_absoluta.min}} a {{item.referencia_absoluta.max}}</span>
+                </div>
+            </div>
+            }
+            <div class="observacao-alerta">
+                <strong>OBSERVAÇÃO:</strong> <span class="destaque-vermelho"> LEUCOCITOSE CONFIRMADA</span>
+            </div>
+        </section>
+
+        <!-- Tabela Série Plaquetária -->
+        <section class="secao-laudo">
+            <div class="tabela-header">
+                <span class="col-nome">Série Plaquetária</span>
+                <span class="col-resultado">Resultados</span>
+                <span class="col-referencia">Valores de referência</span>
+            </div>
+
+           @for (item of dados.serie_plaquetaria; track $index) {
+            <div class="tabela-body">
+                <div class="linha">
+                    <span class="col-nome">{{item.nomeCampos}}</span>
+                    <span class="col-resultado">{{item.resultado}} {{item.unidade}}</span>
+                    <span class="col-referencia">{{item.referencia.min}} a {{item.referencia.max}} {{item.referencia.unidade}}</span>
+                </div>
+            </div>
+        }
+        </section>
+    }
+
+               <div class="acao-container">
+            <app-button-pre-natal
+            [dadosButton]="{nomeButton:'Continuar',rotaButton:'/homeHemograma' }"/>
+        </div>
+    </div>
+
+
+</app-main-layout-pre-natal>

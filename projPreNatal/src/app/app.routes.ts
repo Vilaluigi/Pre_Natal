@@ -19,5 +19,9 @@ export const routes: Routes = [
     {
         path:"home",
         loadComponent:()=>import("./features/home/home-pre-natal/home-pre-natal").then(m=>m.HomePreNatal)
+    },
+    {
+      path:"homeHemograma",
+      loadComponent:()=> import('./features/home/home-hemograma-pre-natal/home-hemograma-pre-natal').then(m=>m.HomeHemogramaPreNatal)  
     }
 ];

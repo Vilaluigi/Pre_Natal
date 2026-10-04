@@ -16,7 +16,7 @@
                 </div>
                 <mat-form-field class="custom-select">
                     <mat-label>{{item.nomePaciente}}</mat-label>
-                    <mat-select panelClass="custom-select-panel" [formControl]="ArrayPacientes.controls[$index]">
+                    <mat-select panelClass="custom-select-panel" [formControl]="pegarForControlCorreto($index)">
                          <mat-option [value]=""></mat-option>
                         @for (dado of item.dadosTrimestres; track dado.key) {
                         <mat-option [value]="dado.value">{{dado.key}}</mat-option>
@@ -30,7 +30,7 @@
         <!-- Botão de Ação -->
         <div class="acao-container">
             <app-button-pre-natal
-            [dadosButton]="{nomeButton:'Continuar',rotaButton:'/' }"/>
+            [dadosButton]="{nomeButton:'Continuar',rotaButton:'/homeHemograma' }"/>
         </div>
 
     </div>
