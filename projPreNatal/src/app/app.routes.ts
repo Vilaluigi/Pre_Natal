@@ -23,5 +23,13 @@ export const routes: Routes = [
     {
       path:"homeHemograma",
       loadComponent:()=> import('./features/home/home-hemograma-pre-natal/home-hemograma-pre-natal').then(m=>m.HomeHemogramaPreNatal)  
+    },
+    {
+        path:"analiseEritrograma",
+        loadComponent:()=> import('./features/analiseInd/analise-individual-eritrograma-pre-natal/analise-individual-eritrograma-pre-natal').then(m=>m.AnaliseIndividualEritrogramaPreNatal)
+    },
+    {
+        path:"analiseLeucograma",
+        loadComponent:()=> import('./features/analiseInd/analise-individual-leucograma-pre-natal/analise-individual-leucograma-pre-natal').then(m=>m.AnaliseIndividualLeucogramaPreNatal),
     }
 ];

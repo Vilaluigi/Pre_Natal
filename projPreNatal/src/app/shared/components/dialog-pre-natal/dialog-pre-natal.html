@@ -1,0 +1,38 @@
+<div class="dialog-container">
+  
+  <!-- Cabeçalho da Dialog -->
+  <header class="dialog-header">
+    <div class="titulo-area">
+      <!-- <button class="btn-voltar" (click)="fecharDialog()" type="button" aria-label="Voltar">
+        <span class="icone-voltar">&lt;</span>
+      </button> -->
+      <h2 class="dialog-titulo">{{data.dados.nomeCampos}} / ERITRÓCITOS</h2>
+    </div>
+    <button class="btn-fechar" (click)="fecharDialog()" type="button" aria-label="Fechar">✕</button>
+  </header>
+
+  <!-- Conteúdo Informativo -->
+  <mat-dialog-content class="dialog-content">
+    
+    <section class="bloco-info">
+      <h3 class="subtitulo-info">Revisando a Fisiologia</h3>
+      <p class="texto-descricao">
+        {{data.dados.dadosCard.revFisio}}
+      </p>
+    </section>
+
+    <section class="bloco-info">
+      <h3 class="subtitulo-info">{{data.dados.dadosCard.nomeSegundPart}}</h3>
+      <p class="texto-descricao">
+        {{data.dados.dadosCard.infoSegundPart}}
+      </p>
+    </section>
+
+  </mat-dialog-content>
+
+  <!-- Rodapé com Botão Voltar/Fechar -->
+  <!-- <mat-dialog-actions class="dialog-actions">
+    <button class="btn-voltar-rodape" (click)="fecharDialog()" type="button">Voltar</button>
+  </mat-dialog-actions> -->
+
+</div>
