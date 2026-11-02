@@ -1,0 +1,213 @@
+:host {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: 100%;
+  flex: 1;
+  box-sizing: border-box;
+}
+
+.hemograma-container {
+  padding: 32px 40px;
+  background-color: transparent;
+  font-family: 'Roboto', sans-serif;
+  color: #333333;
+  width: 100%;
+  height: 100%;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+}
+
+/* Cabeçalho */
+.header-info {
+  margin-bottom: 28px;
+  width: 100%;
+}
+
+.titulo-com-voltar {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.btn-voltar {
+  background: none;
+  border: none;
+  color: #1a738a;
+  font-size: 1.4rem;
+  font-weight: 700;
+  cursor: pointer;
+  padding: 0;
+  display: flex;
+  align-items: center;
+  line-height: 1;
+}
+
+.titulo-hemograma {
+  color: #1a738a;
+  font-size: 1.25rem;
+  font-weight: 700;
+  margin: 0;
+}
+
+/* Estrutura das Seções */
+.secao-laudo {
+  margin-bottom: 28px;
+  width: 100%;
+  flex: 1;
+}
+
+/* 
+   Tabela ocupando 100% com distribuição ampla:
+   - Coluna 1 (Nome): 25% da largura
+   - Coluna 2 (Resultados): 35% da largura
+   - Coluna 3 (Checkbox): 80px
+   - Coluna 4 (Referência): Restante (35%)
+*/
+.tabela-header {
+  display: grid;
+  grid-template-columns: 1fr 1.5fr 80px 1.5fr;
+  align-items: center;
+  background-color: rgba(217, 217, 217, 0.5);
+  padding: 12px 24px;
+  border-radius: 6px;
+  font-weight: 700;
+  color: #808080;
+  font-size: 0.95rem;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.col-resultado-header {
+  text-align: left;
+}
+
+.col-referencia-header {
+  text-align: center;
+}
+
+/* Linhas da Tabela Dinâmica */
+.tabela-body {
+  padding: 8px 0;
+  width: 100%;
+}
+
+.linha {
+  display: grid;
+  grid-template-columns: 1fr 1.5fr 80px 1.5fr;
+  align-items: center;
+  padding: 10px 24px;
+  font-size: 0.95rem;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.linha .col-nome {
+  font-weight: 700;
+  color: #2d3748;
+  text-align: left;
+  cursor: pointer;
+}
+
+.linha .col-resultado {
+  font-weight: 700;
+  color: #1a202c;
+  text-align: left;
+}
+
+.col-check {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.checkbox-custom {
+  appearance: none;
+  -webkit-appearance: none;
+  width: 22px;
+  height: 22px;
+  background-color: #D9D9D9;
+  border-radius: 4px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  outline: none;
+  border: none;
+}
+
+.checkbox-custom:checked {
+  background-color: #1a738a;
+}
+
+.checkbox-custom:checked::after {
+  content: '✓';
+  color: #ffffff;
+  font-size: 0.85rem;
+  font-weight: bold;
+}
+
+.linha .col-referencia {
+  font-weight: 700;
+  color: #2d3748;
+  text-align: center;
+}
+
+/* Observação */
+.observacao-alerta {
+  margin-top: 28px;
+  padding: 0 24px;
+  font-size: 0.95rem;
+  color: #2d3748;
+}
+
+.tracos {
+  color: #808080;
+  font-weight: normal;
+  letter-spacing: 2px;
+  margin-left: 6px;
+}
+
+/* Instruções */
+.instrucoes-alerta {
+  margin-top: 16px;
+  padding: 0 24px;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.destaque-vermelho {
+  color: #e53e3e;
+  font-weight: 700;
+  font-size: 0.95rem;
+  margin: 0;
+}
+
+/* Botão de Ação */
+.acao-container {
+  display: flex;
+  justify-content: center;
+  margin-top: auto;
+  padding-top: 24px;
+  padding-bottom: 16px;
+  width: 100%;
+}
+
+.btn-comparar {
+  background-color: #1a738a;
+  color: #ffffff;
+  border: none;
+  border-radius: 6px;
+  padding: 12px 36px;
+  font-size: 1rem;
+  font-weight: 500;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+}
+
+.btn-comparar:hover {
+  background-color: #145b6e;
+}

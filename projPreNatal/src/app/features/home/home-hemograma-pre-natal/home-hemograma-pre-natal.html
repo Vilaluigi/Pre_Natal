@@ -15,7 +15,7 @@
                 <strong>Material:</strong> SANGUE TOTAL COM EDTA
             </p>
         </header>
-        @for (dados of HemogramaPacientes; track $index) {
+        @for (dados of HemogramaPacientes(); track $index) {
         <!-- Tabela Eritrograma -->
         <section class="secao-laudo">
             <div class="tabela-header">
@@ -28,7 +28,7 @@
                 <div class="linha">
                     <span class="col-nome">{{item.nomeCampos}}</span>
                     <span class="col-resultado">{{item.resultado}} {{item.unidade}}</span>
-                    <span class="col-referencia">{{item.referencia.min}},00  a  {{item.referencia.max}}</span>
+                    <span class="col-referencia">{{item.referencia.min}}  a  {{item.referencia.max}}</span>
                 </div>
                 
             </div>
@@ -46,8 +46,8 @@
             <div class="tabela-body">
                 <div class="linha">
                     <span class="col-nome">{{item.nomeCampos}}</span>
-                    <span class="col-resultado">{{item.resultado_absoluto || item.percentual}}{{item.unidade_absoluta || '%'}}</span>
-                    <span class="col-referencia">{{item.referencia_absoluta.min}} a {{item.referencia_absoluta.max}}</span>
+                    <span class="col-resultado">{{item.resultado || item.percentual}}{{item.unidade || '%'}}</span>
+                    <span class="col-referencia">{{item.referencia.min}} a {{item.referencia.max}}</span>
                 </div>
             </div>
             }
@@ -76,11 +76,12 @@
         </section>
     }
 
-               <div class="acao-container">
-            <app-button-pre-natal
-            [dadosButton]="{nomeButton:'Continuar',rotaButton:'/homeHemograma' }"/>
+        <div class="acao-container">
+            <app-button-pre-natal [dadosButton]="{nomeButton:'Continuar',rotaButton:'/analiseEritrograma' }"/>
         </div>
+
     </div>
+
 
 
 </app-main-layout-pre-natal>

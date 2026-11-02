@@ -1,0 +1,63 @@
+<div class="hemograma-container">
+  
+  <!-- Cabeçalho Principal -->
+  <header class="header-info">
+    <div class="titulo-com-voltar">
+      <button class="btn-voltar" type="button" aria-label="Voltar">
+        <span class="icone-voltar" [routerLink]="rotasVoltar()">&lt;</span>
+      </button>
+      <h1 class="titulo-hemograma">
+        {{dadosAnalise()[0].grupofamiliar}} - Segundo trimestre de gestação - Gestação Ana
+      </h1>
+    </div>
+  </header>
+
+  <!-- Tabela do Eritrograma -->
+  <section class="secao-laudo">
+    
+    <!-- Cabeçalho das Colunas (Grid ajustado) -->
+    <div class="tabela-header">
+      <span class="col-nome-header"></span>
+      <span class="col-resultado-header">Resultados</span>
+      <span class="col-check-header"></span>
+      <span class="col-referencia-header">Referência Lab</span>
+    </div>
+
+    <!-- Lista de Parâmetros -->
+    <div class="tabela-body">
+      
+      @for (item of dadosAnalise(); track $index) {
+        <div class="linha">
+          <span class="col-nome" (click)="abrirDialog(item)">{{ item.nomeCampos }}</span>
+            <span class="col-resultado">{{item.resultado || item.percentual}} {{item.unidade || '%'}}</span>
+          <span class="col-check">
+            <input type="checkbox" [id]="'item-' + $index" class="checkbox-custom">
+          </span>
+            <span class="col-referencia">{{ item.referencia.min  }} a {{ item.referencia.max }}</span>
+        </div>
+      }
+      
+    </div>
+
+    <!-- Observação -->
+    <div class="observacao-alerta">
+      <strong>OBSERVAÇÃO:</strong> <span class="tracos">--------------</span>
+    </div>
+
+    <!-- Instruções em Vermelho -->
+    <div class="instrucoes-alerta">
+      <p class="destaque-vermelho">
+        1- Analise os resultados e verifique se estão dentro dos valores de referência
+      </p>
+      <p class="destaque-vermelho">
+        2- Se quiser, marque a caixa ao lado para caso tenha algum valor elevado
+      </p>
+    </div>
+  </section>
+
+  <!-- Botão Ação -->
+  <div class="acao-container">
+    <app-button-pre-natal [dadosButton]="dadosBtn"/>
+  </div>
+
+</div>
