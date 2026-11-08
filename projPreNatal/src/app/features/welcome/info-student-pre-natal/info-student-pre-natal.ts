@@ -11,7 +11,7 @@ import { UserSession } from '../../../core/services/user-session';
 export class InfoStudentPreNatal {
 
 constructor( private userSession:UserSession){}
- teste(){
+ iniciarSessao(){
   this.userSession.gerarSessao()
   this.userSession.session
  }

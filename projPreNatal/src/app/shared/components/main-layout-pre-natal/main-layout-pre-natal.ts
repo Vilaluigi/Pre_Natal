@@ -1,10 +1,10 @@
 import { NgOptimizedImage } from '@angular/common';
 import { Component } from '@angular/core';
-import {  Router, RouterLink, RouterLinkActive } from '@angular/router';
+import { Router, RouterLink, RouterLinkActive, RouterOutlet } from '@angular/router';
 import { UserSession } from '../../../core/services/user-session';
 
 @Component({
-  imports: [NgOptimizedImage,RouterLink,RouterLinkActive],
+  imports: [NgOptimizedImage, RouterLink, RouterLinkActive, RouterOutlet],
   selector: 'app-main-layout-pre-natal',
   styleUrl: './main-layout-pre-natal.css',
   templateUrl: './main-layout-pre-natal.html',
