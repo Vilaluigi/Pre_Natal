@@ -117,9 +117,9 @@ export const HemogramaPacientes = [
                     max: 11000
                 },
                 dadosCard: {
-                    revFisio: 'A contagem de eritrócitos é usada para detectar a quantidade desta célula por milímetro cúbico de sangue total. A principal função dos eritrócitos é transportar oxigênio (O2) dos alvéolos pulmonares para os tecidos e remover destes o gás carbônico (CO2), para ser eliminado nos pulmões.',
-                    nomeSegundPart: 'Contagem de eritrócitos / Hemácias na Gestação',
-                    infoSegundPart: 'Durante a gravidez ocorre o aumento das proporções de soro, fazendo com que os eritrócitos apareçam em menor número (pseudoanemia). Com uma expectativa de vida de 120 dias, os eritrócitos são um excelente marcador de longo prazo para anemia, embora leve muito tempo para se constatar o efeito de uma intervenção. Há aumento da produção de eritropoietina com a idade gestacional, atingindo um máximo de 150% no terceiro trimestre. Isto por sua vez aumenta as células vermelhas do sangue em cerca de 33%.'
+                    revFisio: 'RDW – indica o índice de aumento da variabilidade do tamanho dos eritrócitos. Um RDW aumentado é comumente observado nas deficiências, como a de ferro, folato e vitamina B12. O RDW pode ser considerado uma medida semiquantitativa da anisocitose',
+                    nomeSegundPart: 'RDW na Gestação',
+                    infoSegundPart: 'É um indicador do aumento da variabilidade do tamanho dos eritrócitos. Um RDW aumentado é comumente observado nas deficiências, como a de ferro, folato e vitamina B12. O RDW pode ser considerado uma medida semiquantitativa da anisocitose.'
                 },
                 grupofamiliar:'Leucograma'
             },
@@ -136,9 +136,9 @@ export const HemogramaPacientes = [
                     max: 550
                 },
                 dadosCard: {
-                    revFisio: 'A contagem de eritrócitos é usada para detectar a quantidade desta célula por milímetro cúbico de sangue total. A principal função dos eritrócitos é transportar oxigênio (O2) dos alvéolos pulmonares para os tecidos e remover destes o gás carbônico (CO2), para ser eliminado nos pulmões.',
-                    nomeSegundPart: 'Contagem de eritrócitos / Hemácias na Gestação',
-                    infoSegundPart: 'Durante a gravidez ocorre o aumento das proporções de soro, fazendo com que os eritrócitos apareçam em menor número (pseudoanemia). Com uma expectativa de vida de 120 dias, os eritrócitos são um excelente marcador de longo prazo para anemia, embora leve muito tempo para se constatar o efeito de uma intervenção. Há aumento da produção de eritropoietina com a idade gestacional, atingindo um máximo de 150% no terceiro trimestre. Isto por sua vez aumenta as células vermelhas do sangue em cerca de 33%.'
+                    revFisio: `Neutrófilos Bastonetes - são os neutrófilos jovens. Quando um indivíduo está com uma infecção, a medula óssea aumenta rapidamente a produção de leucócitos e acaba por lançar, na corrente sanguínea, neutrófilos jovens, recém produzidos. Normalmente, apenas 4 a 5% dos neutrófilos circulantes são bastões.`,
+                    nomeSegundPart: 'Neutrófilos na Gestação',
+                    infoSegundPart: 'Durante a gestação, a neutrofilia (contagem elevada dos neutrófilos) pode resultar da prejudicada apoptose de neutrófilos.Na gestação, fatores inibidores deprimem a quimiotaxia de neutrófilos e a sua atividade fagocítica. Etiologias para neutropenia (baixa contagem de neutrófilos) são: deficiência vitamina B12 / ácido fólico, anemia aplástica, quimioterapia e medicamentos, tais como cloranfenicol e sulfonamidas.'
                 }
             },
             {
@@ -154,9 +154,9 @@ export const HemogramaPacientes = [
                     max: 7700
                 },
                 dadosCard: {
-                    revFisio: 'A contagem de eritrócitos é usada para detectar a quantidade desta célula por milímetro cúbico de sangue total. A principal função dos eritrócitos é transportar oxigênio (O2) dos alvéolos pulmonares para os tecidos e remover destes o gás carbônico (CO2), para ser eliminado nos pulmões.',
-                    nomeSegundPart: 'Contagem de eritrócitos / Hemácias na Gestação',
-                    infoSegundPart: 'Durante a gravidez ocorre o aumento das proporções de soro, fazendo com que os eritrócitos apareçam em menor número (pseudoanemia). Com uma expectativa de vida de 120 dias, os eritrócitos são um excelente marcador de longo prazo para anemia, embora leve muito tempo para se constatar o efeito de uma intervenção. Há aumento da produção de eritropoietina com a idade gestacional, atingindo um máximo de 150% no terceiro trimestre. Isto por sua vez aumenta as células vermelhas do sangue em cerca de 33%.'
+                    revFisio: 'Neutrófilos Segmentados - é o tipo de leucócito em maior número na corrente sanguínea, representando 45% a 75% dos leucócitos circulantes. Estas células são responsáveis pelo combate às bactérias. Quando há uma infecção bacteriana ou fúngica, a sua concentração sanguínea se eleva.',
+                    nomeSegundPart: 'Neutrófilos na Gestação',
+                    infoSegundPart: 'Durante a gestação, a neutrofilia (contagem elevada dos neutrófilos) pode resultar da prejudicada apoptose de neutrófilos.Na gestação, fatores inibidores deprimem a quimiotaxia de neutrófilos e a sua atividade fagocítica. Etiologias para neutropenia (baixa contagem de neutrófilos) são: deficiência vitamina B12 / ácido fólico, anemia aplástica, quimioterapia e medicamentos, tais como cloranfenicol e sulfonamidas.'
                 }
             },
             {
@@ -172,9 +172,9 @@ export const HemogramaPacientes = [
                     max: 550
                 },
                 dadosCard: {
-                    revFisio: 'A contagem de eritrócitos é usada para detectar a quantidade desta célula por milímetro cúbico de sangue total. A principal função dos eritrócitos é transportar oxigênio (O2) dos alvéolos pulmonares para os tecidos e remover destes o gás carbônico (CO2), para ser eliminado nos pulmões.',
-                    nomeSegundPart: 'Contagem de eritrócitos / Hemácias na Gestação',
-                    infoSegundPart: 'Durante a gravidez ocorre o aumento das proporções de soro, fazendo com que os eritrócitos apareçam em menor número (pseudoanemia). Com uma expectativa de vida de 120 dias, os eritrócitos são um excelente marcador de longo prazo para anemia, embora leve muito tempo para se constatar o efeito de uma intervenção. Há aumento da produção de eritropoietina com a idade gestacional, atingindo um máximo de 150% no terceiro trimestre. Isto por sua vez aumenta as células vermelhas do sangue em cerca de 33%.'
+                    revFisio: 'Eosinófilo é um tipo de glóbulo branco que atua na resposta orgânica a alergias, asma e infecções parasitárias. Eosinopenia (baixa contagem de eosinófilos) é observada no acompanhar da gestação. Eosinopenia não tem nenhuma causa específica, 0% de eosinófilos é considerado normal.',
+                    nomeSegundPart: 'faltando',
+                    infoSegundPart: 'faltando'
                 }
             },
             {
@@ -190,9 +190,9 @@ export const HemogramaPacientes = [
                     max: 220
                 },
                 dadosCard: {
-                    revFisio: 'A contagem de eritrócitos é usada para detectar a quantidade desta célula por milímetro cúbico de sangue total. A principal função dos eritrócitos é transportar oxigênio (O2) dos alvéolos pulmonares para os tecidos e remover destes o gás carbônico (CO2), para ser eliminado nos pulmões.',
-                    nomeSegundPart: 'Contagem de eritrócitos / Hemácias na Gestação',
-                    infoSegundPart: 'Durante a gravidez ocorre o aumento das proporções de soro, fazendo com que os eritrócitos apareçam em menor número (pseudoanemia). Com uma expectativa de vida de 120 dias, os eritrócitos são um excelente marcador de longo prazo para anemia, embora leve muito tempo para se constatar o efeito de uma intervenção. Há aumento da produção de eritropoietina com a idade gestacional, atingindo um máximo de 150% no terceiro trimestre. Isto por sua vez aumenta as células vermelhas do sangue em cerca de 33%.'
+                    revFisio: 'Basófilos são células do sistema imune formadas na medula óssea, normalmente aumentados em casos de alergia, liberam heparina e histamina para combater a causa da alergia. Basopenia (baixa contagem de basófilos) não tem nenhuma causa específica, 0% basófilos é considerado normal. Basófilos diminuem com a idade gestacional.',
+                    nomeSegundPart: 'faltando',
+                    infoSegundPart: 'faltando'
                 }
             },
             {
@@ -208,9 +208,9 @@ export const HemogramaPacientes = [
                     max: 5500
                 },
                 dadosCard: {
-                    revFisio: 'A contagem de eritrócitos é usada para detectar a quantidade desta célula por milímetro cúbico de sangue total. A principal função dos eritrócitos é transportar oxigênio (O2) dos alvéolos pulmonares para os tecidos e remover destes o gás carbônico (CO2), para ser eliminado nos pulmões.',
-                    nomeSegundPart: 'Contagem de eritrócitos / Hemácias na Gestação',
-                    infoSegundPart: 'Durante a gravidez ocorre o aumento das proporções de soro, fazendo com que os eritrócitos apareçam em menor número (pseudoanemia). Com uma expectativa de vida de 120 dias, os eritrócitos são um excelente marcador de longo prazo para anemia, embora leve muito tempo para se constatar o efeito de uma intervenção. Há aumento da produção de eritropoietina com a idade gestacional, atingindo um máximo de 150% no terceiro trimestre. Isto por sua vez aumenta as células vermelhas do sangue em cerca de 33%.'
+                    revFisio: 'Linfócitos são células responsáveis pela defesa do corpo, quando estão aumentados pode significar que o corpo está reagindo a algum microrganismo, mas também podem estar aumentados quando há problema na produção dessas células.',
+                    nomeSegundPart: 'Linfócitos na Gestação',
+                    infoSegundPart: 'O número de linfócitos aumenta durante a gravidez, provavelmente devido a infecções bacterianas. No entanto, têm-se uma diminuição em sua contagem durante o primeiro e segundo trimestre da gravidez e um aumento no terceiro trimestre. Tal linfopenia (supressão de linfócitos) pode estar relacionada à monocitose que ajuda a prevenir a rejeição dos aloenxertos fetais durante o primeiro trimestre.'
                 }
             },
             {
@@ -226,9 +226,9 @@ export const HemogramaPacientes = [
                     max: 1500
                 },
                 dadosCard: {
-                    revFisio: 'A contagem de eritrócitos é usada para detectar a quantidade desta célula por milímetro cúbico de sangue total. A principal função dos eritrócitos é transportar oxigênio (O2) dos alvéolos pulmonares para os tecidos e remover destes o gás carbônico (CO2), para ser eliminado nos pulmões.',
-                    nomeSegundPart: 'Contagem de eritrócitos / Hemácias na Gestação',
-                    infoSegundPart: 'Durante a gravidez ocorre o aumento das proporções de soro, fazendo com que os eritrócitos apareçam em menor número (pseudoanemia). Com uma expectativa de vida de 120 dias, os eritrócitos são um excelente marcador de longo prazo para anemia, embora leve muito tempo para se constatar o efeito de uma intervenção. Há aumento da produção de eritropoietina com a idade gestacional, atingindo um máximo de 150% no terceiro trimestre. Isto por sua vez aumenta as células vermelhas do sangue em cerca de 33%.'
+                    revFisio: 'Monócitos são células do sistema imunológico que têm a função de defender o organismo de corpos estranhos, como vírus e bactérias. São produzidos na medula óssea e ficam poucas horas na circulação, seguindo para outros tecidos, onde sofrem o processo de diferenciação, sendo então denominados de macrófagos. Suas principais funções são: a fagocitose, a apresentação de antígeno e produção de citocinas.',
+                    nomeSegundPart: 'Monócitos na Gestação',
+                    infoSegundPart: 'Monocitose (alta contagem de monócitos) é causada por inflamação crónica, infecção viral e infecção bacteriana. É predominante durante a gravidez.'
                 }
             },
 
