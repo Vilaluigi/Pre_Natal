@@ -36,6 +36,10 @@ export const routes: Routes = [
             {
                 path:"analiseLeucograma",
                 loadComponent:()=> import('./features/analiseInd/analise-individual-leucograma-pre-natal/analise-individual-leucograma-pre-natal').then(m=>m.AnaliseIndividualLeucogramaPreNatal),
+            },
+            {
+                path:"analisePlaquetaria",
+                loadComponent: ()=> import('./features/analiseInd/analise-individual-plaquetaria-pre-natal/analise-individual-plaquetaria').then(m=>m.AnaliseIndividualPlaquetaria)
             }
         ]
     }
