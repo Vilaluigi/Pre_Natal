@@ -244,11 +244,11 @@ export const HemogramaPacientes = [
                     unidade: "x10³/mm3"
                 },
                 dadosCard: {
-                    revFisio: 'A contagem de eritrócitos é usada para detectar a quantidade desta célula por milímetro cúbico de sangue total. A principal função dos eritrócitos é transportar oxigênio (O2) dos alvéolos pulmonares para os tecidos e remover destes o gás carbônico (CO2), para ser eliminado nos pulmões.',
-                    nomeSegundPart: 'Contagem de eritrócitos / Hemácias na Gestação',
-                    infoSegundPart: 'Durante a gravidez ocorre o aumento das proporções de soro, fazendo com que os eritrócitos apareçam em menor número (pseudoanemia). Com uma expectativa de vida de 120 dias, os eritrócitos são um excelente marcador de longo prazo para anemia, embora leve muito tempo para se constatar o efeito de uma intervenção. Há aumento da produção de eritropoietina com a idade gestacional, atingindo um máximo de 150% no terceiro trimestre. Isto por sua vez aumenta as células vermelhas do sangue em cerca de 33%.'
+                    revFisio: 'Contagem de plaquetas/ trobócitos (frequentemente incluído no hemograma completo), são necessários para a coagulação e controle do sangramento.',
+                    nomeSegundPart: 'Plaquetas na Gestação',
+                    infoSegundPart: 'No transcorrer da gestação, ocorre diminuição significativa na contagem de plaquetas. Durante a gravidez, a parede uterina expande continuamente para possibilitar o crescimento fetal. Trombocitopenia é definido pela contagem de plaquetas <150 x 109/ L e ocorre devido ao aumento da destruição de plaquetas. No entanto, a agregação de plaquetas aumenta, especialmente no terceiro trimestre o que traz à gestação um estado de hipercoagulabilidade propensa ao tromboembolismo.'
                 },
-                grupofamiliar:'serie_plaquetaria'
+                grupofamiliar:'Série Plaquetaria'
             },
             {
                 nomeCampos: "VMP",
@@ -259,9 +259,9 @@ export const HemogramaPacientes = [
                     max: 12.6
                 },
                 dadosCard: {
-                    revFisio: 'A contagem de eritrócitos é usada para detectar a quantidade desta célula por milímetro cúbico de sangue total. A principal função dos eritrócitos é transportar oxigênio (O2) dos alvéolos pulmonares para os tecidos e remover destes o gás carbônico (CO2), para ser eliminado nos pulmões.',
-                    nomeSegundPart: 'Contagem de eritrócitos / Hemácias na Gestação',
-                    infoSegundPart: 'Durante a gravidez ocorre o aumento das proporções de soro, fazendo com que os eritrócitos apareçam em menor número (pseudoanemia). Com uma expectativa de vida de 120 dias, os eritrócitos são um excelente marcador de longo prazo para anemia, embora leve muito tempo para se constatar o efeito de uma intervenção. Há aumento da produção de eritropoietina com a idade gestacional, atingindo um máximo de 150% no terceiro trimestre. Isto por sua vez aumenta as células vermelhas do sangue em cerca de 33%.'
+                    revFisio: 'O Volume Plaquetário Médio analisa em conjuntos os índices (PDW-VPM) é útil no estudo da trombocitopenia, se ambos índices estiverem elevados sugere uma destruição periférica de plaquetas.   O aumento de VPM equivale ao diagnóstico de púrpura trombocitopênica imune (ITP), doenças mieloproliferativas, síndrome de Bernard-Soulier ou pré-eclâmpsia. A redução do VPM aponta para o diagnóstico de anemia aplástica, terapia de drogas citotóxicas ou infecções virais.',
+                    nomeSegundPart: 'faltando',
+                    infoSegundPart: 'Faltando'
                 }
             }
         ]
